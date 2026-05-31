@@ -1,2 +1,0 @@
-source /workspaces/esp32_tracing/build/gdbinit/symbols
-source /workspaces/esp32_tracing/build/gdbinit/connect

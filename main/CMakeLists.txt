@@ -1,6 +1,6 @@
 idf_component_register(SRCS "esp32_tracing.c"
                     INCLUDE_DIRS "."
-                    REQUIRES app_trace esp_trace)
+                    REQUIRES esp_driver_gpio esp_trace)
 
 idf_component_get_property(app_trace_lib app_trace COMPONENT_LIB)
 
