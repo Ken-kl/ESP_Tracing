@@ -1,0 +1,30 @@
+{
+    "name": "ESP-IDF Dev Environment",
+    "build": {
+        "dockerfile": "Dockerfile",
+        "context": ".."
+    },
+    "workspaceFolder": "/workspaces/esp32_tracing",
+    "runArgs": [
+        "--privileged",
+        "-v", "/dev/bus/usb:/dev/bus/usb",
+        "--device=/dev/ttyACM0:/dev/ttyACM0"
+
+    ],
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-vscode.cpptools",
+                "ms-vscode.cpptools-extension-pack",
+                "twxs.cmake"
+            ],
+            "settings": {
+                "terminal.integrated.defaultProfile.linux": "bash",
+                "editor.formatOnSave": true,
+                "C_Cpp.formatting": "default"
+            }
+        }
+    },
+    "postCreateCommand": "idf.py set-target esp32c6",
+    "remoteUser": "root"
+}

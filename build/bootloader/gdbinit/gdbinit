@@ -1,0 +1,2 @@
+source /workspaces/esp32_tracing/build/bootloader/gdbinit/symbols
+source /workspaces/esp32_tracing/build/bootloader/gdbinit/connect

@@ -1,0 +1,24 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "GDB Debug (ESP32-C6)",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/build/${command:espIdf.getProjectName}.elf",
+      "MIMode": "gdb",
+      "miDebuggerPath": "/opt/esp/tools/active_compiler/riscv32-esp-elf-gdb",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ],
+      "externalConsole": false,
+      "logging": {
+        "engineLogging": false
+      }
+    }
+  ]
+}

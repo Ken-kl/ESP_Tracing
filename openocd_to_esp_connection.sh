@@ -1,0 +1,3 @@
+#!/bin/bash
+
+openocd -f board/esp32c6-builtin.cfg

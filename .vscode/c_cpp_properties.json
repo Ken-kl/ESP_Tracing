@@ -1,0 +1,32 @@
+{
+    "configurations": [
+        {
+            "name": "ESP-IDF",
+            "compilerPath": "/opt/esp/tools/riscv32-esp-elf/esp-15.2.0_20251204/riscv32-esp-elf/bin/riscv32-esp-elf-gcc",
+            "cStandard": "c11",
+            "cppStandard": "c++17",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "${workspaceFolder}/build/config",
+                "/opt/esp/idf/components/**",
+                "/opt/esp/idf/components/esp_hw_support/include",
+                "/opt/esp/idf/components/esp_common/include",
+                "/opt/esp/idf/components/freertos/FreeRTOS-Kernel/include",
+                "/opt/esp/idf/components/log/include",
+                "/opt/esp/idf/components/app_trace"
+            ],
+            "browse": {
+                "path": [
+                    "/opt/esp/idf/components",
+                    "${workspaceFolder}"
+                ],
+                "limitSymbolsToIncludedHeaders": false
+            },
+            "intelliSenseMode": "linux-gcc-x64",
+            "compileCommands": [
+                "${workspaceFolder}/build/compile_commands.json"
+            ]
+        }
+    ],
+    "version": 4
+}

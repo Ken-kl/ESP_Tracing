@@ -1,0 +1,2 @@
+-march=rv32imac_zicsr_zifencei_zaamo_zalrsc
+"-specs=/workspaces/esp32_tracing/build/specs/picolibc.specs"
